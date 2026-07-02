@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>DASEV GALLERY</title>
+  
+<style>
+    *{
+        margin:0;
+        padding:0;
+        box-sizing:border-box;
+        font-family:Arial, sans-serif;
+    }
+
+    body{
+        background: linear-gradient(135deg, #000814, #001d3d, #003566);
+        color:white;
+        min-height:100vh;
+        overflow-x:hidden;
+        text-align:center;
+    }
+
+    /* top text */
+    .top-text{
+        padding:10px;
+        font-size:12px;
+        color:#ccc;
+        letter-spacing:2px;
+    }
+
+    /* title */
+    .title{
+        font-size:40px;
+        font-weight:bold;
+        margin-top:10px;
+        color:#fff;
+        text-shadow: 0 0 15px #ff0000;
+        animation: glow 2s infinite alternate;
+    }
+
+    @keyframes glow{
+        from{ text-shadow:0 0 10px #ff0000; }
+        to{ text-shadow:0 0 25px #0066ff; }
+    }
+
+    /* question text */
+    .question{
+        margin-top:10px;
+        font-size:16px;
+        color:#ddd;
+        letter-spacing:1px;
+    }
+
+    /* container */
+    .container{
+        width:90%;
+        margin:30px auto;
+        display:grid;
+        grid-template-columns:repeat(auto-fit,minmax(120px,1fr));
+        gap:15px;
+    }
+
+    /* buttons */
+    .btn{
+        display:flex;
+        align-items:center;
+        justify-content:center;
+        padding:15px;
+        border-radius:12px;
+        text-decoration:none;
+        font-size:14px;
+        font-weight:bold;
+        color:white;
+        background: linear-gradient(45deg, #ff0000, #0066ff);
+        box-shadow:0 5px 15px rgba(0,0,0,0.5);
+        transition:0.3s;
+        position:relative;
+        overflow:hidden;
+    }
+
+    .btn:hover{
+        transform:scale(1.08);
+        box-shadow:0 0 20px #00aaff;
+    }
+
+    .btn:active{
+        transform:scale(0.95);
+    }
+
+    /* shine effect */
+    .btn::before{
+        content:"";
+        position:absolute;
+        top:0;
+        left:-100%;
+        width:100%;
+        height:100%;
+        background:rgba(255,255,255,0.2);
+        transform:skewX(-25deg);
+        transition:0.5s;
+    }
+
+    .btn:hover::before{
+        left:100%;
+    }
+
+    /* footer */
+    .footer{
+        margin:30px 0;
+        font-size:18px;
+        color:#aaa;
+        letter-spacing:3px;
+    }
+
+</style>
+</head>
+
+<body>
+
+<div class="top-text">made by SAGAR JATIN</div>
+
+<div class="title">DASEV GALLERY</div>
+
+<div class="question">what you want to see ?</div>
+
+<div class="container">
+
+    <a href="cars.html" class="btn">Cars</a>
+    <a href="bikes.html" class="btn">Bikes</a>
+    <a href="horses.html" class="btn">Horses</a>
+    <a href="mobiles.html" class="btn">Mobiles</a>
+    <a href="nature.html" class="btn">Nature</a>
+    <a href="lions.html" class="btn">Lions</a>
+</div>
+
+<div class="footer">DASEV GALLERY</div>
+
+</body>
+</html>
