@@ -1,144 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Dasev Gallery - Photo Collection</title>
-  <meta name="description" content="Dasev Gallery - browse photos of cars, bikes, horses, mobiles, nature and lions.">
-</head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>DASEV GALLERY</title>
-  
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Dasev Gallery | AI Images, Cars, Bikes, Nature & More</title>
+<meta name="description" content="Dasev Gallery showcases AI generated images, cars, bikes, horses, mobiles, nature and lions. Explore free high quality image galleries.">
+<meta name="keywords" content="Dasev Gallery, AI Images, Cars, Bikes, Nature, Horses, Mobiles, Lions">
+<meta name="robots" content="index,follow">
+<meta name="author" content="Sagar Jatin">
+<link rel="canonical" href="https://karenajatin.github.io/Dasev_Gallery/">
+
+<!-- Open Graph -->
+<meta property="og:title" content="Dasev Gallery | AI Images, Cars, Bikes, Nature & More">
+<meta property="og:description" content="Explore AI generated images and galleries — cars, bikes, horses, mobiles, nature and lions.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://karenajatin.github.io/Dasev_Gallery/">
+<meta property="og:site_name" content="Dasev Gallery">
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Dasev Gallery">
+<meta name="twitter:description" content="Explore AI generated images and galleries.">
+
+<meta name="theme-color" content="#001d3d">
+
+<!-- Structured Data for Google -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "Dasev Gallery",
+  "url": "https://karenajatin.github.io/Dasev_Gallery/",
+  "description": "Dasev Gallery showcases AI generated images, cars, bikes, horses, mobiles, nature and lions."
+}
+</script>
+
 <style>
-    *{
-        margin:0;
-        padding:0;
-        box-sizing:border-box;
-        font-family:Arial, sans-serif;
-    }
-
-    body{
-        background: linear-gradient(135deg, #000814, #001d3d, #003566);
-        color:white;
-        min-height:100vh;
-        overflow-x:hidden;
-        text-align:center;
-    }
-
-    /* top text */
-    .top-text{
-        padding:10px;
-        font-size:12px;
-        color:#ccc;
-        letter-spacing:2px;
-    }
-
-    /* title */
-    .title{
-        font-size:40px;
-        font-weight:bold;
-        margin-top:10px;
-        color:#fff;
-        text-shadow: 0 0 15px #ff0000;
-        animation: glow 2s infinite alternate;
-    }
-
-    @keyframes glow{
-        from{ text-shadow:0 0 10px #ff0000; }
-        to{ text-shadow:0 0 25px #0066ff; }
-    }
-
-    /* question text */
-    .question{
-        margin-top:10px;
-        font-size:16px;
-        color:#ddd;
-        letter-spacing:1px;
-    }
-
-    /* container */
-    .container{
-        width:90%;
-        margin:30px auto;
-        display:grid;
-        grid-template-columns:repeat(auto-fit,minmax(120px,1fr));
-        gap:15px;
-    }
-
-    /* buttons */
-    .btn{
-        display:flex;
-        align-items:center;
-        justify-content:center;
-        padding:15px;
-        border-radius:12px;
-        text-decoration:none;
-        font-size:14px;
-        font-weight:bold;
-        color:white;
-        background: linear-gradient(45deg, #ff0000, #0066ff);
-        box-shadow:0 5px 15px rgba(0,0,0,0.5);
-        transition:0.3s;
-        position:relative;
-        overflow:hidden;
-    }
-
-    .btn:hover{
-        transform:scale(1.08);
-        box-shadow:0 0 20px #00aaff;
-    }
-
-    .btn:active{
-        transform:scale(0.95);
-    }
-
-    /* shine effect */
-    .btn::before{
-        content:"";
-        position:absolute;
-        top:0;
-        left:-100%;
-        width:100%;
-        height:100%;
-        background:rgba(255,255,255,0.2);
-        transform:skewX(-25deg);
-        transition:0.5s;
-    }
-
-    .btn:hover::before{
-        left:100%;
-    }
-
-    /* footer */
-    .footer{
-        margin:30px 0;
-        font-size:18px;
-        color:#aaa;
-        letter-spacing:3px;
-    }
-
+*{margin:0;padding:0;box-sizing:border-box;font-family:Arial,sans-serif}
+body{background:linear-gradient(135deg,#000814,#001d3d,#003566);color:#fff;text-align:center;min-height:100vh}
+.top{padding:12px;color:#ccc;font-size:12px}
+h1{margin:10px 0;font-size:42px;text-shadow:0 0 15px red}
+p{color:#ddd}
+.grid{width:90%;margin:30px auto;display:grid;grid-template-columns:repeat(auto-fit,minmax(120px,1fr));gap:15px}
+a{display:flex;align-items:center;justify-content:center;text-decoration:none;color:#fff;padding:15px;border-radius:12px;background:linear-gradient(45deg,#f00,#06f);font-weight:bold;transition:transform .2s}
+a:hover{transform:scale(1.05)}
+.footer{margin:30px;color:#aaa;font-size:13px}
 </style>
 </head>
-
 <body>
-
-<div class="top-text">made by SAGAR JATIN</div>
-
-<div class="title">DASEV GALLERY</div>
-
-<div class="question">what you want to see ?</div>
-
-<div class="container">
-
-    <a href="cars.html" class="btn">Cars</a>
-    <a href="bikes.html" class="btn">Bikes</a>
-    <a href="horses.html" class="btn">Horses</a>
-    <a href="mobiles.html" class="btn">Mobiles</a>
-    <a href="nature.html" class="btn">Nature</a>
-    <a href="lions.html" class="btn">Lions</a>
+<div class="top">Made by SAGAR JATIN</div>
+<h1>DASEV GALLERY</h1>
+<p>What do you want to see?</p>
+<div class="grid">
+<a href="cars.html">Cars</a>
+<a href="bikes.html">Bikes</a>
+<a href="horses.html">Horses</a>
+<a href="mobiles.html">Mobiles</a>
+<a href="nature.html">Nature</a>
+<a href="lions.html">Lions</a>
 </div>
-
-<div class="footer">DASEV GALLERY</div>
-
+<div class="footer">&copy; Dasev Gallery — All rights reserved</div>
 </body>
 </html>
